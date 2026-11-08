@@ -21,9 +21,15 @@
 2. Відкрити Copilot Chat.
 3. Перейти в режим **Agent**.
 4. Вибрати агента **build-engineer**.
-5. Ввести `/init`.
+5. Оскільки у VS Code є вбудована команда `/init`, запустити наш оркестратор через прикріплення prompt-файлу:
 
-Окремі команди агента: `/git-init`, `/create-project`, `/create-build`, `/create-actions`, `/check`.
+   ```text
+   #init.prompt.md Виконай цей prompt-файл повністю
+   ```
+
+   Або через **Ctrl+Shift+P → Chat: Run Prompt File → init**.
+
+Інші команди агента запускаються як звичайні slash-команди: `/git-init`, `/create-project`, `/create-build`, `/create-actions`, `/check`.
 
 ## Запуск проєкту
 
